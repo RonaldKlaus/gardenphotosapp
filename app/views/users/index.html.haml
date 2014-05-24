@@ -1,0 +1,16 @@
+%table
+  - @users.each do |user|
+    %tr.user
+      %td.user-gender
+        - if user.gender == 'w'
+          Frau
+        - elsif
+          Herr
+      %td.user-title
+        = user.title
+      %td.user-firstname
+        = user.firstname
+      %td.user-lastname
+        = user.lastname
+      %td.buttons
+

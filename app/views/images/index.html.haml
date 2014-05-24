@@ -1,0 +1,8 @@
+- @images.each do |image|
+  .image
+    .image-title
+      = image.title
+    .image-image
+      = image_tag(image)
+    .image-description
+      = image.description
