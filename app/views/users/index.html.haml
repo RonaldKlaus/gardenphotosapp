@@ -9,7 +9,7 @@
       %td.user-title
         = user.title
       %td.user-firstname
-        = user.firstname
+        = link_to user.firstname, user_path(user)
       %td.user-lastname
         = user.lastname
       %td.buttons
